@@ -1,0 +1,256 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+body{
+    background: grey;
+    color: black;
+    font-family: "Karla", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    background: #0a0a23;
+    color: #444444;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    position: fixed;
+    height: 100px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #eeceae;
+    background-attachment: scroll;
+    opacity: 0.8;
+}
+h1 {
+    font-family: cursive;
+    font-size: 100%;
+    background-color: black;
+    color: #fff;
+    font-family: cursive;
+    border-radius: 7px;
+    overflow: hidden;
+    padding: 10px 0;
+    opacity: 1;
+}
+sup {
+    font-size: 0.5em;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 1;
+}
+nav {
+    width: 70%;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-block: 0;
+    align-items: center;
+    padding-inline-start: 0;
+    opacity: 1;
+}
+
+nav > ul > li {
+    list-style: none;
+    padding: 4px;
+    opacity: 1;
+}
+nav > ul > li > a {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 1;
+}
+nav > ul > li:hover {
+    background-color: black;
+    color: gold;
+    opacity: 1;
+}
+a:hover{
+    color: gold;
+}
+a:visited{
+    color: gold;
+}
+a:active{
+    color: #000;
+    background-color: #fff;
+}
+.home {
+    width: 90%;
+    border-radius: 4em;
+    background: #c9a8a8, 0.5;
+    margin: 0 auto;
+    min-width: 500px;
+    box-shadow: 1px 1px 20px 1px rgb(197, 194, 194);
+}
+h2, p {
+    text-align: center;
+    color: black;
+    margin: 12px;
+}
+.par {
+    padding-top: 97px;
+    font-size: 40px;
+    color: #fff;
+    background: black;
+    max-height: 120px;
+    margin: 0;
+}
+.ww{
+    text-align: left;
+    padding-bottom: 0;
+    width: 50%;
+    margin-left: 70px;
+    padding-top: 20px;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+    border: solid rgb(121, 117, 117);
+    border-radius: 40px;
+    max-width: 350px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 1px 1px 20px 5px rgb(197, 194, 194);
+}
+.figure::after {
+    content: "";
+    width: 350px;
+  }
+/*.img {
+    animation: scroll 10s linear 0s infinite;
+}
+@keyframes scroll {
+    0% {
+        transform: translatex(0%);
+    }
+    100% {
+        transform: translatex(-100%);
+    }
+} */
+.figure {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1px;
+    align-items: center;
+}
+#img-caption {
+    display: block;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 0 100px;
+}
+hr {
+    max-width: 260px;
+    margin-top: -1em;
+    height: 1px;
+    border-bottom: none;
+    background-color: #0a0a23;
+}
+.sales {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.shop{
+    width: fit-content;
+    font-size: 2.5em;
+    background: rgba(233, 123, 101, 0.5);
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+  .signup {
+    margin-top: 40px;
+    text-align: left;
+    font-weight: 900;
+    font-size: 50px;
+  }
+  
+  .sign {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .info input, .info label {
+    display: block;
+  }
+label{
+    margin: 10px auto;
+    font-weight: 900;
+    font-size: 1.3em;
+}
+.info {
+    margin: 20px;
+}
+.info input, textarea{
+    font-size: 16px;
+    width: 50%;
+    height: 38px;
+    background-color: #a09a9a;
+    color: #fff;
+}
+label .comment {
+    font-size: 18px;
+}
+button {
+    padding: 3px;
+    width: 40%;
+    max-width: 300px;
+    border-radius: 20px;
+    margin-left: 1em;
+    font-size: 1.2em;
+    color: #a09a9a;
+    background-color: lavenderblush;
+}
+button:hover{
+    background-color: #a09a9a;
+    color: #fff;
+}
+button:active {
+    background-color: #0a0a23;
+}
+@media (max-width: 1000px) and (min-width: 700px) {
+    .sign {
+        width: 700px;
+    }
+}
+@media (max-width: 800px) and (min-width: 654px) {
+    img {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        width: 100%;
+    }
+    #img-caption {
+        margin: 0 50px;
+    }
+    .figure {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1px;
+        align-items: center;
+    }
+    .home {
+        width: 100%;
+    }
+}
+@media (max-width: 517px) and (min-width: 407px)  {
+    main, .par{
+        width: 100%;
+        overflow: hidden;
+    }
+}
